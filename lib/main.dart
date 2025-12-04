@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_with_docs/accessibility/accessibility.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -22,4 +21,5 @@ class MyApp extends StatelessWidget {
       home: ProfileScreen(),
     );
   }
+
 }
