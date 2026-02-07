@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_with_docs/accessibility/accessibility.dart';
+import 'package:flutter_with_docs/oneui-examples/oneui_examples.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'basics/appbars/appbars.dart';
 import 'basics/buttons/buttons.dart';
@@ -102,6 +103,12 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (_) =>  const NotificationDemo()));
               },
               child: Text('Notifications'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) =>  const OneUiExampleScreen()));
+              },
+              child: Text('OneUi Examples'),
             ),
           ],
         ),
