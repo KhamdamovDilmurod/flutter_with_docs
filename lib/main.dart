@@ -7,6 +7,7 @@ import 'basics/buttons/buttons.dart';
 import 'basics/layouts/layouts.dart';
 import 'basics/paintings/paintings.dart';
 import 'basics/scrollings/scrollings.dart';
+import 'ios_examples/apple_ui_examples.dart';
 import 'notifications/notifications.dart';
 
 void main() async {
@@ -109,6 +110,12 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (_) =>  const OneUiExampleScreen()));
               },
               child: Text('OneUi Examples'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) =>  const AppleWidgetsDemo()));
+              },
+              child: Text('AppleUi Examples'),
             ),
           ],
         ),
